@@ -1,0 +1,205 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_86b50326ffd048c3a6dfa38c36068e5b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_86b50326ffd048c3a6dfa38c36068e5b" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_86b50326ffd048c3a6dfa38c36068e5b = L.map('map_86b50326ffd048c3a6dfa38c36068e5b', {
+                                           center:[33.173812312500004,12.862763153125004],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_7531d4c3f08f4b928ca544b54f464ba2 = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: '(c) <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (c) <a href="http://cartodb.com/attributions">CartoDB</a>, CartoDB <a href ="http://cartodb.com/attributions">attributions</a>',
+                    detectRetina: false
+                    }
+                ).addTo(map_86b50326ffd048c3a6dfa38c36068e5b);
+
+        
+        
+            
+(function(){
+    var data = [[29.739336, -95.48216, '陈建发', 'Sfile Technology Corporation'], [1.3483099, 103.6831347, '刘学', 'Nanyang Technological University'], [38.9869183, -76.9425543, '张瑞星', 'University of Maryland'], [40.0141905, -83.03091429999999, '张文娟', 'The Ohio State University'], [40.7532792, -73.9753564, '高正汉', 'Morgan Stanley'], [39.53804700000001, 116.683752, '朱江', '新奥集团能源研究院'], [37.3834115, -121.9346904, '岳春雷', 'ASML'], [42.331427, -83.0457538, '吴凡', ''], [39.3299013, -76.6205177, '时宇', 'Johns Hopkins University'], [39.3299013, -76.6205177, '许劲松', 'Johns Hopkins University'], [22.396428, 114.109497, '肖松文', ''], [38.6970314, -90.4193667, '蒋春雨', 'Equifax'], [39.9056536, 116.3358632, '王恬子', '国家发改委能源研究所'], [31.847443, 117.295572, '周勇', '合肥工业大学'], [1.2966426, 103.7763939, '马亚平', 'NUS'], [34.752941, 113.644854, '杨珣', '郑州大学'], [22.396428, 114.109497, '张引', ''], [32.7876533, -96.7990344, '张钊', '高盛'], [42.3504997, -71.1053991, '王天祺', 'Boston University'], [31.847443, 117.295572, '王梓', '合肥工业大学'], [30.507908, 114.413666, '叶艳霞', '华中科技大学'], [22.543096, 114.057865, '胡虹', ''], [31.24916799999999, 121.489928, '孔金城', '雷根基金'], [31.821994, 117.28059, '李大光', '中国科学技术大学'], [31.821994, 117.28059, '肖波', '中国科大'], [36.1519879, -95.946, '鲍逸非', 'Unversity of Tulsa'], [41.8781136, -87.6297982, '端木彦青', '美联航'], [36.0477699, 103.8585624, '贾浩', '兰州大学'], [37.3860517, -122.0838511, '杨佶', 'Google Brain'], [39.6361396, -79.95593579999999, '葛卓之', 'West Virginia University'], [43.6628917, -79.39565640000001, '陈雪松', '滑铁卢大学'], [31.821994, 117.28059, '李燊', '中国科大']];
+    var map = map_86b50326ffd048c3a6dfa38c36068e5b;
+    var callback_cluster = function () {var cluster = L.markerClusterGroup({iconCreateFunction: function(cluster) {var childCount = cluster.getChildCount();var allchildmarkers = cluster.getAllChildMarkers();var totalweight = 0;for (var i = 0; i < childCount; i++) {var popup = allchildmarkers[i].getPopup();totalweight += 1;}var c = " marker-cluster-";if (childCount < 10) {c += "small";} else if (childCount < 100) {c += "medium";} else {c += "large";};return new L.DivIcon({ html: "<div><span><font size=3>" + totalweight +"人"+ "</font></span></div>" , className: "marker-cluster" + c, iconSize: new L.Point(0, 50) });}});return cluster};;
+    //var cluster = L.markerClusterGroup();
+    var callback_marker = function (row) {icon = L.AwesomeMarkers.icon({icon: "child", markerColor: "blue",prefix:"fa"});marker = L.marker(new L.LatLng(row[0], row[1]));popup = L.popup().setContent("<html><font size=3>"+row[2]+","+row[3]+"</font></html>").openOn(marker);marker.bindPopup(popup);marker.setIcon(icon);return marker};;
+    var cluster = callback_cluster();
+    
+    for (var i = 0; i < data.length; i++) {
+        var row = data[i];
+        var marker = callback_marker(row);
+        //var cluster = callback_cluster(marker);
+        marker.addTo(cluster);
+    }
+
+    cluster.addTo(map);
+})();
+        
+        
+        </script>
+        
